@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:id="@+id/drawer_layout"
+android:fitsSystemWindows="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a1a">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a1a1a"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar"
+        android:tooltipText="My Subscription"
+
+            >
+
+
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView1"
+        android:background="@drawable/image1"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Invite Your Friends"
+        android:id="@+id/textview1"
+        android:paddingRight="35sp"
+        android:paddingLeft="35sp"
+        android:textSize="30sp"
+        android:textColor="#f5f5f5"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:paddingLeft="35sp"
+        android:paddingRight="35sp"
+        android:textSize="18sp"
+        android:text=" After they sign up, you each get. 1 Free month of Pro Subscription"
+        android:id="@+id/textview2"
+        android:textColor="#e3dad6"
+        />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsms"
+        android:text="SMS"
+        android:layout_marginTop="50sp"
+        android:textColor="#f5f5f5"
+        android:background="#4ca64c"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnemail"
+        android:text="Email"
+        android:layout_marginTop="15sp"
+        android:textColor="#1a1a1a"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:id="@+id/btnfacebook"
+        android:text="facebook"
+        android:textColor="#f5f5f5"
+        android:background="#4553c1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        />
+</LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header"
+
+        />
+
+</android.support.v4.widget.DrawerLayout>
